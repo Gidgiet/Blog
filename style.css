@@ -1,0 +1,65 @@
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+header {
+    background-color: #36383b;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    }
+
+header nav a {
+    padding: 10px;
+    color: aliceblue;
+    font-size: 20px;
+    
+}
+
+header nav a:hover{
+    color: cornflowerblue;
+}
+
+section {
+    padding: 10px;
+}
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+a, p, h1, h2, h3, h4, h5, h6{
+    color: #2e3033;
+
+
+}
+
+main p{
+    font-size: 1rem;
+    line-height: 1.6rem;
+    padding: 10px 20px 10px 20px;
+}
+
+aside{
+    float: right;
+    width: 20%;
+}
+
+aside ul {
+    padding: 0px 20px 0px 20px;
+}
+
+aside ul li{
+    font-size: 1rem;
+    line-height: 1.6rem;
+    list-style: none;
+}
+
+
+    
