@@ -61,5 +61,12 @@ aside ul li{
     list-style: none;
 }
 
-
+hero-content {
+    max-width: 600px;
+  }
+  
+  hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
 
