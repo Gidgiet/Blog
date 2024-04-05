@@ -3,11 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Contact Form</title>
     <link rel="stylesheet" href="style.css">
     <style>
 
-   
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background: #222222;
+    text-align: center;
+}
+
+h1{
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+p{
+    color: rgb(255, 255, 255);
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 5% 5%;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 20px 0;
+}
+
+input,textarea,label{
+    display: block;
+    margin: auto;
+    width: 100%;
+    color: rgb(255, 255, 255);
+}
+
+input,textarea{
+    background-color: transparent;
+    border: 0;
+    border-bottom: 3px solid rgb(255, 255, 255);
+}
+
+input, textarea{
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.button{
+    display: inline-block;
+    background-color: rgb(126, 86, 104);
+    font-size: 30px;
+    color: white;
+    padding: 30px 40px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: rgb(189, 151, 165);
+    color: black;
+}
+
     </style>
 </head>
 <body>
@@ -21,8 +96,25 @@
                 <a href="Contact Form.html">Contact Form</a>
             </nav>
         </header>
-       
-       
     </div>
+
+    <div class="container">
+        <h1>Contact Here</h1>
+        <p>Feel free to contact me here</p>
+        <form action="">
+            <label for="name">Name</label>
+            <input type="text" name="" id="name">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+            <label for="subject">Subject</label>
+            <input type="text" name="subject" id="subject">
+            <label for="message">Message</label>
+            <textarea name="message"  cols="30" rows="10"></textarea>
+            <div class="button-container">
+            <a href="mailto:your-email@example.com?subject=Feedback%20Form&body=Name%3A%0AEmail%3A%0AMessage%3A" class="button">Send Email</a>
+            </div>
+        </form>
+    </div>
+
 </body>
 </html>
