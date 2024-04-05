@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang=" en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        
- body {
+        body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            color: #333;
+            background-color: rgb(240, 240, 240);
+            color: #e6d3d7;
             margin: 0;
             padding: 0;
         }
@@ -21,13 +20,48 @@
             padding: 20px;
         }
 
+        header {
+            margin-bottom: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #411a2c;
+            padding: 10px;
+        }
+
+      
+        main {
+            display: flex;
+            flex-direction: column;
+        }
+
         section {
             margin-bottom: 40px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center; 
+        }
+
+        section img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .text {
+            max-width: calc(50% - 10px); 
+            padding-left: 20px;
         }
 
         h2 {
             font-size: 24px;
-            color: #007bff;
+            color: #411a2c;
             margin-bottom: 10px;
         }
 
@@ -35,10 +69,9 @@
             font-size: 16px;
             line-height: 1.6;
         }
-   
     </style>
 </head>
-<body>
+<body style="background-image: url('About\ Background.png'); background-size: cover; background-repeat: no-repeat; background-position: center;">
     <div class="container">
         <header>
             <nav>
@@ -49,28 +82,24 @@
                 <a href="Contact Form.html">Contact Form</a>
             </nav>
         </header>
-       
-        <header>
-            <h1>About Us</h1>
-        </header>
+ 
         <main>
             <section>
-                <h2>Our Mission</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, elit eu tristique condimentum, neque nisi suscipit urna, nec convallis erat est nec neque. Duis at fringilla quam. Sed bibendum vitae nulla vitae mattis. Praesent dictum vestibulum nibh, nec posuere risus faucibus eget. Vestibulum ultricies risus in nisi faucibus, vel varius sem finibus. In sit amet libero et magna volutpat malesuada a sit amet libero.</p>
+                <div class="text">
+                    <h2>Introduction</h2>
+                    <p>A person interested in the gaming world, sharing news and updates about upcoming games and current ones</p>
+                </div>
+                
             </section>
             <section>
-                <h2>Our Team</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, elit eu tristique condimentum, neque nisi suscipit urna, nec convallis erat est nec neque. Duis at fringilla quam. Sed bibendum vitae nulla vitae mattis. Praesent dictum vestibulum nibh, nec posuere risus faucibus eget. Vestibulum ultricies risus in nisi faucibus, vel varius sem finibus. In sit amet libero et magna volutpat malesuada a sit amet libero.</p>
-            </section>
-            <section>
-                <h2>Our Vision</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, elit eu tristique condimentum, neque nisi suscipit urna, nec convallis erat est nec neque. Duis at fringilla quam. Sed bibendum vitae nulla vitae mattis. Praesent dictum vestibulum nibh, nec posuere risus faucibus eget. Vestibulum ultricies risus in nisi faucibus, vel varius sem finibus. In sit amet libero et magna volutpat malesuada a sit amet libero.</p>
+                <div class="text">
+                    <h2>About me</h2>
+                    <p>Being apart if the competitive scene means that I have acquired skills and knowlegde on the topic, and in return would like to share my gained expertise with others</p>
+                </div>
+                
+               
             </section>
         </main>
-        <footer>
-            <p>&copy; 2024 Your Company Name. All rights reserved.</p>
-        </footer>
-
     </div>
 </body>
 </html>
